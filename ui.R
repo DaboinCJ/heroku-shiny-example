@@ -11,7 +11,9 @@ shinyUI(
       numericInput('clusters', 'Cluster count', 3, min=1, max=9)
     ),
     mainPanel(
-      plotOutput('plot1')
+      plotOutput('plot1'),
+      plotOutput('plot2')
     )
+
   )
 )

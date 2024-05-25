@@ -22,4 +22,11 @@ shinyServer(function(input, output, session) {
     points(clusters()$centers, pch=4, cex=4, lwd=4)
   })
 
+  output$plot2 <- renderPlot({
+    
+    ggplot(data=mtcars,aes(x=mpg,y=disp))+
+    geom_point()
+  })
+
+
 })

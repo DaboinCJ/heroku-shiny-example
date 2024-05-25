@@ -1,9 +1,10 @@
 library(shiny)
-
+library(ggplot2)
+#hey
 port <- Sys.getenv('PORT')
 
 shiny::runApp(
-  appDir = getwd(),
-  host = '0.0.0.0',
-  port = as.numeric(port)
+ appDir = getwd(),
+ host = '0.0.0.0',
+ port = as.numeric(port)
 )
